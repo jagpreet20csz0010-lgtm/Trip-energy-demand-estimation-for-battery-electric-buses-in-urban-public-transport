@@ -10,8 +10,8 @@ Battery electric buses (BEBs) are increasingly used in urban public transport sy
 
 The dataset contains information about battery electric bus trips, including route characteristics and energy consumption. In the manuscript, the following variables are considered as independent (input) features:  
 
-- **ATS:** Average Trip Speed (Km/h)  
-- **Average Passenger Count**  
+- **Average Trip Speed (Km/h) (ATS)** 
+- **Average Passenger Count (APC)**  
 - **Trip Duration (minutes)**  
 - **Trip Length (Km)**  
 - **Number of Bus Stops**  
@@ -21,18 +21,18 @@ The actual dataset column names and their corresponding manuscript variables are
 
 | Dataset Column Name         | Manuscript Variable Name              | Description |
 |-----------------------------|--------------------------------------|-------------|
-| `Speed`                     | ATS (Average Trip Speed)             | Average speed of the bus during the trip (km/h). |
+| `Speed`                     | Average Trip Speed                   | Average speed of the bus during the trip (km/h). |
 | `Passengers`                | Average Passenger Count              | Average number of passengers on the trip. |
 | `Trip_Duration_Minutes`     | Trip Duration (minutes)              | Total duration of the trip in minutes. |
 | `Route_Length_km`           | Trip Length (Km)                     | Total distance of the trip in kilometers. |
 | `Number_of_Bus_Stops`       | Number of Bus Stops                  | Total number of stops along the route. |
-| `Trip_Temprature`           | External Temperature (°C)            | Average ambient temperature during the trip (°C). |
+| `Trip_Temprature`           | External Temperature (°C)            | City temperature during the trip (°C). |
 
 The output (dependent) variable representing energy consumption is:
 
-| Dataset Column Name         | Description |
+| Dataset Column Name         | Manuscript Variable Name  Description |
 |-----------------------------|-------------|
-| `Trip_Energy_kw`            | Energy consumed during the trip in kilowatts (instantaneous or peak, if applicable). |
+| `Trip_Energy_kw`            | TED (Trip Energy Demand)  estimation for the trip in kilowatt. |
 
 **Note:** This mapping ensures consistency between the dataset and the variables described in the manuscript.
 
