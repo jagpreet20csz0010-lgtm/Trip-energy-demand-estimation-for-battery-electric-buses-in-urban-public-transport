@@ -1,11 +1,40 @@
 # Trip-energy-demand-estimation-for-battery-electric-buses-in-urban-public-transport
 
-Battery electric buses (BEBs) are increasingly used in urban public transport systems as a cleaner and more energy-efficient alternative to conventional buses. For these buses to operate reliably, it is important to estimate how much energy they will need for each trip. Trip energy demand estimation helps transport agencies plan battery sizes, schedule charging, and design appropriate charging infrastructure.
+Battery electric buses (BEBs) are increasingly used in urban public transport systems as a cleaner and more energy-efficient alternative to conventional buses. For these buses to operate reliably, it is important to estimate how much energy they will need for each trip. Trip energy demand estimation (TED) helps public transport operators to dorecast energy demandsand plan charging infrastructure.
 
 ## Features
-- Data and code to estimate trip energy demand of BEBs
-- Includes route characteristics such as speed, passenger load, duration, stops, and ambient temperature
-- Example scripts to reproduce results
+- Dataset and python code to model TED (trip energy demand) of BEBs.
+- Example scripts to reproduce results.
+
+## Dataset Description and Data Dictionary
+
+The dataset contains information about battery electric bus trips, including route characteristics and energy consumption. In the manuscript, the following variables are considered as independent (input) features:  
+
+- **ATS:** Average Trip Speed (Km/h)  
+- **Average Passenger Count**  
+- **Trip Duration (minutes)**  
+- **Trip Length (Km)**  
+- **Number of Bus Stops**  
+- **External Temperature (°C)**  
+
+The actual dataset column names and their corresponding manuscript variables are mapped below for clarity:
+
+| Dataset Column Name         | Manuscript Variable Name              | Description |
+|-----------------------------|--------------------------------------|-------------|
+| `Speed`                     | ATS (Average Trip Speed)             | Average speed of the bus during the trip (km/h). |
+| `Passengers`                | Average Passenger Count              | Average number of passengers on the trip. |
+| `Trip_Duration_Minutes`     | Trip Duration (minutes)              | Total duration of the trip in minutes. |
+| `Route_Length_km`           | Trip Length (Km)                     | Total distance of the trip in kilometers. |
+| `Number_of_Bus_Stops`       | Number of Bus Stops                  | Total number of stops along the route. |
+| `Trip_Temprature`           | External Temperature (°C)            | Average ambient temperature during the trip (°C). |
+
+The output (dependent) variable representing energy consumption is:
+
+| Dataset Column Name         | Description |
+|-----------------------------|-------------|
+| `Trip_Energy_kw`            | Energy consumed during the trip in kilowatts (instantaneous or peak, if applicable). |
+
+**Note:** This mapping ensures consistency between the dataset and the variables described in the manuscript.
 
 ## Requirements
 ...
