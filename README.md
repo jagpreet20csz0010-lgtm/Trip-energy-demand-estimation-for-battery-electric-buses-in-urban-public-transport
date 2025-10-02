@@ -37,5 +37,18 @@ The output (dependent) variable representing energy consumption is:
 **Note:** This mapping ensures consistency between the dataset and the variables described in the manuscript.
 
 ## Requirements
-...
+### Environment Information
+Python version: 3.8.10  
+OS: Windows 11
 
+### Package Versions
+pandas==1.4.3  
+numpy==1.22.4  
+matplotlib==3.5.2  
+seaborn==0.13.2  
+shap==0.44.1  
+scikit-learn==1.2.1  
+tensorflow==2.13.0  
+keras==2.13.1  
+lightgbm==4.4.0  
+python-docx==1.1.2  
