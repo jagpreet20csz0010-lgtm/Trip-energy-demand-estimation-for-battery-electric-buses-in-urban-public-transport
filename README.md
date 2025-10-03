@@ -4,7 +4,7 @@ Battery electric buses (BEBs) are increasingly used in urban public transport sy
 
 ## Features
 - Dataset and python code to model TED (trip energy demand) of BEBs.
-- Example scripts to reproduce results.
+- Python scripts to reproduce results.
 
 ## Dataset Description and Data Dictionary
 
